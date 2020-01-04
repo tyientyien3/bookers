@@ -1,0 +1,22 @@
+<%=   flash[:success]  %>
+
+
+<table>
+
+  <th>Title:</th>
+  <th><p><%= @book.title %></p></th>
+
+</table>
+<table>
+
+  <th>Body:</th>
+  <th><p><%= @book.body %></p></th>
+  
+</table>
+
+
+<%= link_to "Edit", edit_book_path(@book) %>
+
+|
+
+<%= link_to "Back", books_path %>
